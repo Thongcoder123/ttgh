@@ -1,0 +1,21 @@
+lst = list(map(int, input().split()))
+
+k= int(input())
+
+chan,le,chia_k,c,l=0,0,0,0,0
+
+for values in lst:
+     if values%2==0:
+          chan += values
+          c += 1
+     if values%2!=0:
+          le += values
+          l += 1
+     if values %k==0:
+          chia_k += values
+
+print("Tong cac phan tu chan:", chan)
+print("Tong cac phan tu le:", le)
+print("Tong cac phan tu chia het cho", k, ":", chia_k)
+print("So phan tu chan:", c)
+print("So phan tu le:", l)
